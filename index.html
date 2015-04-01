@@ -1,29 +1,268 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        
-        <link href="css/jquery.mobile.css" type="text/css"/>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery.mobile.js"></script>
-        
-        <link href="css/style.css" type="text/css"/>
-        <script src="js/functions.js"></script>
-        
-                <title>Health Advice</title>
+<head>
+	<meta charset="utf-8" />
+    <title>Helth Advices</title>
+    <link rel="icon" href="images/helth1.gif"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
 
-    </head>
-    <body>
-        <div id="index" data-role="page">
-            <div data-role="header">
-                <h2>Health Advice</h2>
-            </div>
-            <div data-role="content">
-                fghfghdgh
-            </div>
-            <div data-role="footer">
-                dfhgfhfhd
-            </div>
-        </div>
-    </body>
+	<script src="js/myscript.js"></script>
+    
+	<link rel="stylesheet" href="css/mystyles.css" />
+</head>
+<body>
+	<!-- Home Page -->
+    
+    <div id="home" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<h1 id="h1">Helthy Advices</h1>
+            <img src="images/helth1.gif" id="imglogo">
+		</div>
+		<h1 id="h1">Welcome to the Home Page</h1>
+		<div data-role="controlgroup"
+			data-theme="e" id="p2">
+		<a href="#BIM" 
+			 data-transition="slideup"
+			data-role="button"
+			data-icon="arrow-r"
+		>Testing your length and weight (BIM)</a>
+		<a href="#advices" 
+			 data-transition="slideup"
+			data-role="button"
+			data-icon="arrow-r"
+		>Getting advices for your self</a>
+		<a href="#hosp_info" 
+			 data-transition="slideup"
+			data-role="button"
+			data-icon="arrow-r"
+			> The hospitals information</a>
+		</div>
+        <br><br><br><br><br>
+        <div data-role="footer" data-theme="b">
+       <p>Rashad Shaobi &copy; 2015</p>
+       </div>
+	</div>
+    
+     <div id="BIM" data-role="page" data-theme="b" data-title="Testing length and weight (BIM)">
+	 	<div data-role="header" data-theme="b">
+			<h1 id="h1">Testing length and weight (BIM)</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" data-transition="slidedown">Home</a>
+		</div>
+		<p id="p">To calculate The BMI and to see if your weight and length are convenient input the data by numbers in the boxs.</p>
+        <div>
+        <form>
+   <p id="p2">Enter your weight by kilogram(kg) in this box:</p><input type="number" id="num1" /><br /><br />
+   <p id="p2">Enter your tallness by meter(m) in this box:</p><input type="number" id="num2" /><br />
+  <br />
+    <button type="button" onclick="m()">Press the bottun to see the result</button>
+    </div>
+    <br>
+    
+    <div id="res" class="pp"></div><br>
+    <div id="text" class="pp"></div>
+    <div id="scrawny" style="visibility:hidden;"><img src="images/4cbK97Eni.gif" id="img"></div><div id="good" style="visibility:hidden;"><img src="images/muscle-hi.png" id="img"></div>
+   <div id="fat" style="visibility:hidden;"><img src="images/obese-children.gif" id="img"></div>
+    <div id="t" class="pp"></div>
+    <div id="t2" class="pp"></div>
+    </form>
+    <br><br><br><br><br>
+    <div data-role="controlgroup"
+			data-theme="b" id="p2">
+		<a href="#home" 
+			data-transition="slidedown"
+			data-role="button"
+			data-icon="back"
+		>Back to the home page</a></div>
+    </div>
+    	
+        <!--  Advices page-->
+        
+    <div id="advices"
+		data-role="page"
+        data-theme="b"
+		data-title="Getting advices for your self">
+		<div data-role="header"
+			data-position="fixed"
+            data-theme="b"
+			data-id="vs_header">
+			<h1 id="h1">Getting advices for your self</h1>
+			<a href="#home" data-icon="home" data-theme="b" data-iconpos="notext" data-transition="slidedown">Home</a>
+		</div>
+		<br><br><br><p id="p">Those are some advices that can help you just press on the advice and you will see the answer.</p>
+        <div data-role="content">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h3>If you have a diabetes.</h3>
+					<table><tr><td><p id="p">Try to avoid eating any food is Sweet or contain sugars.</p>
+                    <p id="p">Such as chocolate, candy, and any food is Sweet.</p></td><td>
+                    <img src="images/sweet.gif" id="imgadvice" class="img-thumbnail"></td></tr></table>
+				</div>
+				<div data-role="collapsible">
+					<h3>If you have a Blood Pressure.</h3>
+                    <table><tr><td><p id="p">Try to avoid eating salty foods or any thing acid.</p>
+                    <p id="p">Such as salt or Lemon.</p></td><td>
+                    <img src="images/selty.gif" class="img-thumbnail" id="imgadvice"></td></tr></table>
+				</div>
+				<div data-role="collapsible">
+					<h3>If you have both diabetes and Blood Pressure.</h3>
+                    <table><tr><td><p id="p">Try to balance between eating foods that contain sugars or Chocolate and eating salty foods and acid things.</p>     
+         </td><td><img src="images/Sweet and selt.gif" class="img-thumbnail" id="imgadvice"></td></tr></table>
+				 </div>
+				   <div data-role="collapsible">
+					<h3>If you feel the dizziness.</h3>
+					<p id="p2">Put your hand on somthing is fixed, because the nerves of the hand gives the brain signales to reduction the dizziness.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>If you suffer from dryness of mouth.</h3>
+                    <table><tr><td><p id="p">Drink water, and it will be better to drink much mineral water.</p>
+					</td><td><img src="images/plastic-water-bottle.gif" class="img-thumbnail" id="imgwater"></td></tr></table>
+				</div>
+               <div data-role="collapsible">
+					<h3>If you want to make your mind strong.</h3>
+                     <table><tr><td><p id="p2">Drink cup of coffee every morning.</p></td><td> 
+                     <img src="images/coffee.gif" id="imgadvice" class="img-thumbnail"></td></tr></table>
+				</div>
+               <div data-role="collapsible">
+					<h3>If you have colisetrol.</h3>
+                     <table><tr><td><p id="p2">Drink juices and it will be better to drink apple juice, becuse apple juice can reduces the colisetrol better than the athor juices.</p>
+                     <p id="p2">Do not over eat saturated fats can increase blood cholesterol levels.</p></td><td> 
+                     <img src="images/healthy-drinks.gif" id="imgadvice" class="img-thumbnail"></td></tr></table>
+				</div>
+                <div data-role="collapsible">
+					<h3>If you want to avoid injury by cancer.</h3>
+                     <table><tr><td><p id="p2">Daily walk for half an hour or an hour reduces the risk of cancer by 18% and helps to get rid of 3 kg almost a year and maintains the strength of the body.</p></td></tr></table>
+				</div>
+                
+                <div data-role="collapsible">
+					<h3>If you want to avoid injury by heart attack.</h3>
+                     <table><tr><td><p id="p2">Be sure to eat fruits and vegetables at a rate of 3 servings daily, it could reduce the risk of heart attack by 70%.</p></td></tr></table>
+				</div>
+                
+ 			</div>
+		</div>
+         <div data-role="controlgroup"
+			data-theme="b" id="p2">
+		<a href="#home" 
+			data-transition="slidedown"
+			data-role="button"
+			data-icon="back"
+		>Back to the home page</a></div>
+       </div>
+       
+       <!--  hospitals info page -->
+       
+<div id="hosp_info"
+		data-role="page"
+        data-theme="b" data-title="Hospitals information">
+        <br><br>
+        <h3 id="p">You can see the information of those hospitals in this list:</h3><br>
+		<div data-role="header"
+			data-position="fixed"
+            data-theme="b">
+			<h1 id="h1">Hospitals information:</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" data-transition="slidedown">Home</a>
+		</div>  
+     <div>
+	<ul data-role="listview" data-theme="b"> 
+			<li><h2 id="p2">Police Hospital</h2>
+				<img src="images/Al-Shorta.jpg" alt="View Source logo" />
+				<ul>
+				<li> <div data-role="content">
+      <p id="p3">Hospital Name: Police Hospital
+      <br />Hospital Number: 248639<br />Hospital Location: Sana'a<br />
+      Hospital Street: Between Al-Hasaba<br>street and Saila'a
+      <br /><br /> </p>
+      <img src="images/Al-Shorta.jpg" id="imghospital" class="img-thumbnail"/>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d961.7752961966125!2d44.20892062233176!3d15.371005441898014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xea1507a2d4115662!2z2YXYs9iq2LTZgdmJINin2YTYtNix2LfYqQ!5e0!3m2!1sen!2s!4v1427822830699" width="500" height="300" frameborder="0" style="border:0"></iframe></div>
+			</li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li>
+				</ul>
+			</li>
+		
+			<li><h2 id="p2">Al-Thawra Hospital</h2>
+		
+				<img src="images/althawra_hosptell000121.jpg" alt="View Source logo"/>
+				<ul>
+					<li><div data-role="content">
+      <p id="p3">Hospital Name: Al-Thawra Hospital
+      <br />Hospital Number: 248639 <br />Hospital Location: Sana'a<br/>
+      Hospital Street: Kolan Street<br /><br /></p></div><div><img src="images/althawra_hosptell000121.jpg" id="imghospital" class="img-thumbnail"/></div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.472038707158!2d44.220943999999996!3d15.350901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603da5af3faf4e3%3A0x5a781dd008957288!2sAl+Thawra+Hospital!5e0!3m2!1sen!2s!4v1427825764032" width="500px" height="300px" frameborder="0" style="border:0"></iframe></li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li>
+				</ul>			
+			</li>
+			<li><h2 id="p2">Al-Kwiat Univercity Hospital</h2>
+				<img src="images/kowit.jpg" width="80px" alt="View Source logo" />
+				<ul>
+					<li><div data-role="content">
+      <p id="p3">Hospital Name: Al-Kwiat Univercity Hospital
+      <br />Hospital Number: 247609 <br />Hospital Location: Sana'a<br />
+      Hospital Street: In Al-Sera'a Street
+      <br /><br /> </p>
+      <img src="images/kowit.jpg" class="img-thumbnail"  id="imghospital" />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3847.2747953301437!2d44.192786!3d15.361597!3m2!1i1024!2i768!4f13.1!2m1!1sAl-Kwiat+Hospital+Sana&#39;a+Yemen!5e0!3m2!1sen!2s!4v1427808610236" width="500" height="300" frameborder="0" style="border:0"></iframe>
+      </li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li><br>
+				</ul>
+			</li>
+		
+			<li><h2 id="p2">Al-Gemhori Hospital</h2>
+				<img src="images/jomhori.jpg" width="80px;" alt="View Source logo" />
+				<ul>
+					<li><div data-role="content">
+      <p id="p3">Hospital Name: Al-Gemhori Hospital
+      <br />Hospital Number: 247609 <br />Hospital Location: Sana'a<br />
+      Hospital Street: In Al-Zobiri Street
+      <br /><br /> </p>
+      <img src="images/jomhori.jpg" class="img-thumbnail" id="imghospital"/>
+      <br /><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3847.5712735337593!2d44.195037!3d15.345517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db0c090d9bb7%3A0xd9db231bf79387eb!2z2KfZhNmF2LPYqti02YHZiSDYp9mE2KzZhdmH2YjYsdmK!5e0!3m2!1sen!2s!4v1427826133202" width="550" height="300" frameborder="0" style="border:0"></iframe>
+</li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li>
+				</ul>
+			</li>
+		
+			<li><h2> Military Hospital</h2>
+				<img src="images/Askari.jpg" width="80px" alt="View Source logo" />
+				<ul>
+					<li><div data-role="content">
+      <p id="p3">Hospital Name: Military Hospital
+      <br />Hospital Number: 047911 <br />Hospital Location: Sana'a<br />
+      Hospital Street: In Shu'ub Street
+      <br /><br /> </p>
+      <img src="images/Askari.jpg" class="img-thumbnail" id="imghospital"/>
+      <br /><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3847.2449832508723!2d44.212646!3d15.363213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603da4a66601d27%3A0xed8d91cdd1f45b7b!2sMilitary+Hospital!5e0!3m2!1sen!2s!4v1427826332658" width="550" height="310" frameborder="0" style="border:0"></iframe></li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li>
+				</ul>
+			</li>	
+            <li><h2> Al-Sabeen Maternal Hospital </h2>
+				<img src="images/70 hopital.jpg" width="80px" class="img-thumbnail" alt="View Source logo" />
+				<ul>
+					<li><div data-role="content">
+      <p id="p3">Hospital Name: Al-Sabeen Maternal Hospital
+      <br />Hospital Number: 047701 <br />Hospital Location: Sana'a<br />
+      Hospital Street: In A-lSabeen Street
+      <br /><br /> </p>
+      <img src="images/70 hopital.jpg" class="img-thumbnail" id="imghospital"/>
+      <br /> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.864668850755!2d44.20701499999998!3d15.329588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db1f71e23bf9%3A0x6c8947410379d532!2sAl+Sabeen+Maternal+Hospital!5e0!3m2!1sen!2s!4v1427807806454" width="550" height="310" frameborder="0" style="border:0"></iframe></li>
+					<li data-icon="back"><a href="#hosp_info">Back</a></li>
+				</ul>
+			</li>
+</ul>			
+		</div><br><br>
+         <div data-role="controlgroup"
+			data-theme="e" id="p2">
+		<a href="#home" 
+			data-transition="slidedown"
+			data-role="button"
+			data-icon="back"
+		>Back to the home page</a></div>
+       </div> 
+	   </div>
+       </div>
+       
+       
+</body>
 </html>

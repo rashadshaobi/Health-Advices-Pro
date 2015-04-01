@@ -1,0 +1,88 @@
+
+#home{
+	text-align:center;
+ }
+ 
+ #home .ui-controlgroup{
+	 width: 30%;
+	 margin: 0 auto;
+ }
+ 
+ #h1{
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-size:30px;
+	}
+	
+ #p{
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-size:22px;
+	}
+  .pp{font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-size:15px;
+	}	
+	
+	 #p2{
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-size:18px;
+	}
+	
+	 #p3{
+		 margin-top: 40px;
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	font-size:20px;
+	}
+	
+ .img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  
+  max-width: 100%;
+  height: auto;
+}
+
+
+#imglogo {
+	height:200px;
+	width:200px;
+	}
+	
+#img {
+    position: absolute;
+	top: 460px;
+    left: 920px;
+	width:180px; 
+	height:180px;
+    }
+
+#img2 {
+    position: absolute;
+	top: 460px;
+    left: 720px;
+	width:250px; 
+	height:200px;
+    }
+
+#imgadvice{
+	width:400px;
+    heigh:300px;
+   }
+
+#imgwater{
+	width:350px;
+	height:200px;
+}
+
+#imghospital{
+	padding-left:5px;
+	float:left;
+	height:300px;
+	}
